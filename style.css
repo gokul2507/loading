@@ -31,15 +31,14 @@ p{
 }
 .ring:nth-child(2){
      animation-duration: 4s;
-     animation-direction: reverse;
      border-radius: 40% 43% 37% 47% / 27% 41% 32% 41% ;
 }
 .ring:nth-child(3){
      border-radius:36% 35% 27% 34% / 35% 31% 37% 32% ;
+     animation-direction: reverse;
 }
 .ring:nth-child(4){
      border-radius: 42% 58% 27% 73% / 68% 33% 67% 32% ;
-     animation-direction: reverse;
 }
 @keyframes animation {
      0%{
