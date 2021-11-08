@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  border: 0px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  
+}
+.ring {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  position: absolute;
+  animation: animation 5s linear infinite;
+}
+p{
+     color: red;
+     position:absolute;
+     top:55px;
+     font-family: consolas;
+     left: 30px;
+     font-size: 28px;
+     color: white;
+}
+.ring:nth-child(2){
+     animation-duration: 4s;
+     animation-direction: reverse;
+     border-radius: 40% 43% 37% 47% / 27% 41% 32% 41% ;
+}
+.ring:nth-child(3){
+     border-radius:36% 35% 27% 34% / 35% 31% 37% 32% ;
+}
+.ring:nth-child(4){
+     border-radius: 42% 58% 27% 73% / 68% 33% 67% 32% ;
+     animation-direction: reverse;
+}
+@keyframes animation {
+     0%{
+          transform: rotate(0deg);
+     }
+     100%{
+          transform: rotate(360deg);
+     }
+}
+
